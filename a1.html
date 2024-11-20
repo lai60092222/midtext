@@ -33,11 +33,13 @@
         a3=t3.value
         if (a2=="123")
       {
-        document.getElementById("p1").innerHTML = a1+"，你已經成功登入網站你的生日是"+a3
+        document.getElementById("p1").innerHTML = a1+"，你已經成功登入網站"
+        document.getElementById("p2").innerHTML = "你的生日是"+a3
       }
       else
     {
        document.getElementById("p1").innerHTML = a1+"，你的密碼輸入錯誤"
+       document.getElementById("p2").innerHTML = ""
     }
       }
       
@@ -103,9 +105,8 @@
               <input type="date" class="s3" id="t3" value="2024-11-21">
             </p>
             <input type="button" class="s2" value="登入" onclick="show1()">
-          <p  class="s2" id="p1">
-            
-          </p>
+          <p  class="s2" id="p1"></p>
+          <p  class="s2" id="p2"></p>
 
 
           <h1>Welcome to your website</h1>
